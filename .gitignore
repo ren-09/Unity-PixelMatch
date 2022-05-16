@@ -61,6 +61,8 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+!/BuildFiles/PixelMatch_v1.app
+
 # Crashlytics generated file
 crashlytics-build.properties
 
