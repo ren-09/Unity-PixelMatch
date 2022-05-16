@@ -59,7 +59,7 @@ sysinfo.txt
 *.apk
 *.aab
 *.unitypackage
-*.app
+#*.app
 
 !/BuildFiles/PixelMatch_v1.app
 
