@@ -2305,7 +2305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &417976256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24337,6 +24337,9 @@ MonoBehaviour:
   MenuPanel: {fileID: 0}
   FX_CrackerUp: {fileID: 1830018029}
   FX_CrackerFall: {fileID: 155279145}
+  star_1: {fileID: 1818982924}
+  star_2: {fileID: 1911324227}
+  star_3: {fileID: 1453987495}
 --- !u!1 &1276982034
 GameObject:
   m_ObjectHideFlags: 0

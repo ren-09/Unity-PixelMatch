@@ -155,7 +155,6 @@ public class AttachedPlane : MonoBehaviour
                 if (transform.eulerAngles.y < 30 || transform.eulerAngles.y >= 200 && transform.eulerAngles.y <= 180)
                 {
                     transform.RotateAround(rotatePointObj.transform.position, new Vector3(0, 1, 0), -6f);
-                    Debug.Log("transform.eulerAngles.y" + transform.eulerAngles.y);
                 }
                 //Planeが開き終わった状態
                 if (transform.eulerAngles.y <= 0 || transform.eulerAngles.y >= 200)
@@ -164,7 +163,6 @@ public class AttachedPlane : MonoBehaviour
                     transform.RotateAround(rotatePointObj.transform.position, new Vector3(0, 1, 0), a);
                     CanMove = false;
                     PlaneOpened = true;
-                    // Debug.Log("cantmove");
 
 
                     //blockTarget代入
@@ -288,16 +286,12 @@ public class AttachedPlane : MonoBehaviour
                 Debug.Log("はずれの座標：" + allBlocks[i].transform.position);
             }
         }
-        for (int n = 0; n < answerBlocks.Count; n++)
-        {
-            Debug.Log(answerBlocks[n]);
-        }
 
         numberOfAllBlocks = allBlocks.Length;
 
-        Debug.Log("numberOfCorrectBlocks：" + numberOfCorrectBlocks);
-        Debug.Log("numberOfAllBlocks：" + numberOfAllBlocks);
-        Debug.Log("numberOfAnswerBlocks：" + numberOfAnswerBlocks);
+        // Debug.Log("numberOfCorrectBlocks：" + numberOfCorrectBlocks);
+        // Debug.Log("numberOfAllBlocks：" + numberOfAllBlocks);
+        // Debug.Log("numberOfAnswerBlocks：" + numberOfAnswerBlocks);
 
 
         Debug.Log("正解:" + numberOfCorrectBlocks);
@@ -352,7 +346,7 @@ public class AttachedPlane : MonoBehaviour
             {
                 parentObj.transform.localScale -= new Vector3(dividedScaleDifferenceX, 0, 0);
                 planeScaleDif = parentObj.transform.localScale - targetScale;
-                Debug.Log("planeScaleDif" + planeScaleDif.x);
+                // Debug.Log("planeScaleDif" + planeScaleDif.x);
             }
             if (planeScaleDif.y > 0)
             {

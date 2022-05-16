@@ -175,7 +175,7 @@ public class Plane : MonoBehaviour
             {
                 parentObj.transform.localScale += new Vector3(dividedScaleDifferenceX, 0, 0);
                 planeScaleDif = blocksScale - parentObj.transform.localScale;
-                Debug.Log("planeScaleDif" + planeScaleDif.x);
+                // Debug.Log("planeScaleDif" + planeScaleDif.x);
             }
             if (planeScaleDif.y > 0)
             {
@@ -237,7 +237,7 @@ public class Plane : MonoBehaviour
         planePositionDif = blocksPos;
         dividedPositionDifferenceX = planePositionDif.x / division;
         dividedPositionDifferenceY = planePositionDif.y / division;
-        // planeScaleDif = parentObj.transform.localScale - new Vector3(1.0f, 1.0f, 1.0f);
+
         planeScaleDif = blocksScale - parentObj.transform.localScale;
         dividedScaleDifferenceX = planeScaleDif.x / division;
         dividedScaleDifferenceY = planeScaleDif.y / division;

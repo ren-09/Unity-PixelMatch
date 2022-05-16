@@ -27,6 +27,9 @@ public class ResultSceneController : MonoBehaviour
     [SerializeField] GameObject MenuPanel;
     [SerializeField] GameObject FX_CrackerUp;
     [SerializeField] GameObject FX_CrackerFall;
+    [SerializeField] GameObject star_1;
+    [SerializeField] GameObject star_2;
+    [SerializeField] GameObject star_3;
 
     void Start()
     {
@@ -41,12 +44,12 @@ public class ResultSceneController : MonoBehaviour
         }
         // LevelChange();
 
-        GameObject textObject = GameObject.Find("ScoreText");
-        Text scoreText = textObject.GetComponent<Text>();
+        //ScoreText
+        // GameObject textObject = GameObject.Find("ScoreText");
+        // Text scoreText = textObject.GetComponent<Text>();
+        // scoreText.text = score.ToString();
 
-        scoreText.text = score.ToString();
-
-        textObject = GameObject.Find("LevelText");
+        GameObject textObject = GameObject.Find("LevelText");
         Text levelText = textObject.GetComponent<Text>();
         levelText.text = "Level " + level.ToString();
         // ChangeStarsColor();
@@ -94,7 +97,7 @@ public class ResultSceneController : MonoBehaviour
 
     public IEnumerator ChangeStarsColor()
     {
-        GameObject[] stars = GameObject.FindGameObjectsWithTag("Star");
+        GameObject[] stars = new GameObject[3] {star_1, star_2, star_3};
         int n = 0;
         for (int i = score; i > 0; i--)
         {

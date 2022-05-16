@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
             staredLevels[i] = numberOfStars;
         }
 
-        Debug.Log("やられたあ");
     }
 
     void Update()
